@@ -18,10 +18,12 @@
                 
             }
         */
+
        //ternario ejemplo: (x < 1000) ? x : 1000;
 
 
-        var edad = parseInt(prompt("Ingresa tu edad",0));
+        /*var edad = parseInt(prompt("Ingresa tu edad",0));
+        var edad = 18;
         if(edad >=18){
             console.log("es mayor a 18 en el if")
         }
@@ -31,14 +33,62 @@
         (edad <18) ? console.log("es menor en ternario") : console.log("es mayor en ternario");
 
         // conectores && (y), || (o)
-        if(edad >10 && edad<20){
-            console.log("Si esta entre 10 y 20")
+        if(edad >=10 && edad<=20){
+            console.log("El numero SI esta entre 10 y 20")
         }
         else{
-            console.log("No esta entre 10 y 20")
+            console.log("El numero NO esta entre 10 y 20")
         }
+        */
+
+        //validar si un numero es mayor o menor o igual a 0
+        /* var numero = parseInt(prompt("Ingresa un numero",0));
+        if (numero==0) {
+            console.log("El numero es igual a 0")
+        }
+        else if (numero>0) {
+            console.log("El numero es mayor a 0")
+        }
+        else{
+            console.log("El numero es menor a 0")
+        }
+        */
+        
+
+        var edad = parseInt(prompt("Ingresa tu edad",0));
+        while (isNaN(edad) || edad <0|| edad >200) {
+            var edad = parseInt(prompt("Ingresa una edad valida (numero entero entre 0 y 150)",22))
+            
+        }
+        if (edad >=18) {
+            var nombre = prompt("Ingresa tu nombre","Nombre");
+            var apellido = prompt("Ingresa tu apellido","Apellido");
+            var direccion =prompt("Ingresa tu direccion","Calle falsa 123");
+            var telefono = parseInt(prompt("Ingresa tu telefono ",957410153));
+            while (isNaN(telefono) || telefono <900000000 || telefono >999999999) {
+            var telefono = parseInt(prompt("Ingresa un telefono valido (9 digitos)",912345678))
+            
+            }
+            var correo = prompt("Ingresa tu correo","correo@gmail.com");
+            //console.log("Se ha registado con exito!\nSus datos son \nNombre: "+nombre+"\nApellido: "+apellido+"\nEdad: "+edad+"\nDireccion: "+direccion+"\nTelefono: "+telefono+"\nCorreo: "+correo)
+            //alert("Se ha registado con exito!\nSus datos son \nNombre: "+nombre+"\nApellido: "+apellido+"\nEdad: "+edad+"\nDireccion: "+direccion+"\nTelefono: "+telefono+"\nCorreo: "+correo);
+            document.write("Tu nombre es: " + nombre);
+            document.write("<br>Tu apellido es: " + apellido);
+            document.write("<br>Tu edad es: " + edad);
+            document.write("<br>Tu direccion es: " + direccion);
+            document.write("<br>Tu telefono es: " + telefono);
 
 
+            
+
+        }
+        else if(edad <18){
+            //console.log("No puedes registrarte en esta pagina, debes ser mayor de edad para poder registrarte")
+            //alert("No puedes registrarte en esta pagina, debes ser mayor de edad para poder registrarte");
+            document.write("**********************************************************************<br>");
+            document.write("*   No puedes registrarte en esta pagina, debes ser mayor de edad para poder registrarte   *<br>");
+            document.write("**********************************************************************<br>");
+        }
 
     </script>
 </body>
