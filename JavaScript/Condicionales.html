@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        //condicionales
+        /*la sentenccia if
+            validad o comprobar algo para tomar alguna decision
+            **Si la condicion es verdadera ingresara al if
+            condicion == true
+            if(condicion){
+                dentro del if
+                
+            }
+        */
+       //ternario ejemplo: (x < 1000) ? x : 1000;
+
+
+        var edad = parseInt(prompt("Ingresa tu edad",0));
+        if(edad >=18){
+            console.log("es mayor a 18 en el if")
+        }
+        else{
+            console.log("Es menor a 18 en el if")
+        }
+        (edad <18) ? console.log("es menor en ternario") : console.log("es mayor en ternario");
+
+        // conectores && (y), || (o)
+        if(edad >10 && edad<20){
+            console.log("Si esta entre 10 y 20")
+        }
+        else{
+            console.log("No esta entre 10 y 20")
+        }
+
+
+
+    </script>
+</body>
+</html>
