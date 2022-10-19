@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea</title>
+</head>
+<body>
+    <script>
+    /*
+    1. Obtén del 1 al 255: Escribe un programa que devuelve un array con todos los números del 1 al 255.
+    
+	
+	2. Consigue pares hasta 1000: Escribe un programa que entregue la suma de todos los números pares del 1 al 1000 - Puedes usar un operador de módulo para este ejercicio. 
+	
+	3. Suma impares hasta 5000: Escribe un programa que devuelva la suma de todos los números impares entre 1 y 5000 (ej: 1+3+5+...+4997+4999).
+	
+	4. Itera un array: Escribe un programa que devuelva la suma de todos los valores dentro de un array (ej:  [1,2,5] retorna 8. [-5,2,5,12] retorna 14). 
+	
+	5. Encuentra el mayor (max): Dado un array con múltiples valores, escribe un programa que devuelva el número mayor (ej: para [-3,3,5,7] el número mayor (max) es 7). 
+	
+	6. Encuentra el promedio (avg): Dado un array con múltiples valores, escribe un programa que devuelva el promedio de los valores (ej: para [1,3,5,7,20] el promedio es 7.2).
+	
+	7. Array de impares: Escribe un programa que devuelva un array de todos los números impares entre 1 y 50 (ej: [1,3,5, …, 47,49]). Pista: Usa el método ‘push’.
+
+    */
+
+
+    // EJERCICIO 1
+    var arreglo1=[];
+    for (let i = 1; i <= 255; i++) {
+        arreglo1.push(i);
+        
+    }
+    document.write("EJERCICIO 1: El arreglo es: <br>"+arreglo1);   
+
+    // EJERCICIO 2
+    var suma2=0;
+    for (let i = 0; i <= 1000; i=i+2) {
+        suma2=suma2+i;
+    }
+    document.write("<br><br>EJERCICIO 2: Suma de numeros pares hasta el 1000: "+suma2);
+
+    // EJERCICIO 3
+    
+    var suma3=0;
+    for (let i = 1; i <= 5000; i=i+2) {
+        suma3=suma3+i;
+    }
+    document.write("<br><br>EJERCICIO 3: Suma de numeros impares hasta el 5000: "+suma3);
+
+    // EJERCICIO 4
+    
+    var arreglo4 = [1,-1,1,-1,1,-1,-1];
+    var resultado4=0;
+    for (let i = 0; i < arreglo4.length; i++) {
+        //console.log(arreglo4.length)
+        resultado4 = resultado4 + arreglo4[i];
+        
+    }
+    document.write("<br><br>EJERCICIO 4: La suma del arreglo es: ", resultado4); 
+
+    // EJERCICIO 5 depende de muchas cosas, si el arreglo va a estar siempre ordenado, si el arreglo es muuuuy grande, etc
+    var array5= [-3,3,5,7];
+    //console.log(Math.max(...array5));
+    //console.log(Math.max(1, 3, 2));
+    document.write("<br><br>EJERCICIO 5: El maximo del arreglo es: "+Math.max(...array5));
+
+    // EJERCICIO 6
+    var suma6=0;
+    var array6=[1,3,5,7,20];
+    var resultado6=0;
+    for (let i = 0; i < array6.length; i++) {
+        suma6 = suma6 + array6[i];
+    }
+    resultado6=suma6/array6.length
+    document.write("<br><br>EJERCICIO 6: El promedio del arreglo es: ", resultado6); 
+
+    // EJERCICIO 7
+    array6=[];
+    for (let i = 1; i <= 50; i=i+2) {
+        array6.push(i);
+    }
+    document.write("<br><br>EJERCICIO 7: El arreglo de impares hasta el 50 es: ", array6); 
+    </script>
+</body>
+</html>
+
