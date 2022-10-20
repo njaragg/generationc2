@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying</title>
+</head>
+<body>
+    <script>
+/*
+        // Escribir un programa que muestre un prompt donde el usuario ingresa un número, luego muestra otro prompt
+        // pidiendo otro número, finalmente el programa muestra una alerta con el resultado de la suma.
+        var num1 = parseInt(prompt("Ingresa el primer numero para sumarlo",0));
+        while (isNaN(num1)) {
+            var num1 = parseInt(prompt("Ingresa un numero valido",0));
+            }
+
+        var num2 = parseInt(prompt("Ingresa el segundo numero para sumarlo",0));
+        while (isNaN(num2)) {
+            var num2 = parseInt(prompt("Ingresa un numero valido",0));
+            }
+        alert("La suma es: "+(num1+num2));
+
+
+        //Crear un programa donde el usuario ingrese en un prompt la temperatura en Celcius y 
+        //el programa muestre en una alerta la temperatura en Fahrenheit.
+        var temperatura = parseInt(prompt("Ingresa la temperatura en celcius",20));
+        while (isNaN(temperatura)) {
+            var temperatura = parseInt(prompt("Ingresa un numero valido",20));
+            }
+        var temperatura_fahrenheit= ((temperatura* 1.8)+32);
+        alert("La temperatura en Fahrenheit es: "+temperatura_fahrenheit);
+
+
+        //Pedir un número a un usuario a través de un prompt y 
+        //luego dividirlo por 10, ejemplo: 5 / 10  igual 0.5
+        var num3 = parseInt(prompt("Ingresa el numero a dividir por 10",20));
+        while (isNaN(num3)) {
+            var num3 = parseInt(prompt("Ingresa un numero valido",20));
+            }
+        alert("El resultado es: "+(num3/10));
+
+
+        //Si a = [1,2,3] crear un script que determine de muestre un alert del tipo de dato de a.
+        var a = [1,2,3];
+        alert("El tipo de dato de la variable a es: " + (typeof a));
+
+
+        //Crear un programa que determine si un número introducido en un Prompt es par o no, 
+        //la respuesta será mostrada en una alerta.
+        var num5 = parseInt(prompt("Ingrese un numero para saber si es par o no",20));
+        while (isNaN(num5)) {
+            var num5 = parseInt(prompt("Ingresa un numero valido",20));
+            }
+        if ((num5 % 2 == 0)) {
+            alert("El numero si es par");  
+        }
+        else
+            alert("El numero no es par");
+*/
+    function crearNuevoArreglo(numero){
+            var arreglo = [];//[0,1,2]
+            for(let i=0; i <= numero;i++){
+                arreglo.push(i);
+            }
+            return arreglo;
+        }
+        var numeroIngresado= parseInt(prompt("ingresa un numero",0));
+        var miArreglo = crearNuevoArreglo(numeroIngresado);
+        document.write("mi arreglo",miArreglo);
+
+
+
+
+    </script>
+</body>
+</html>
