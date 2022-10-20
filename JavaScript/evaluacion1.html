@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluacion 1</title>
+</head>
+<body>
+    
+    <script>
+
+        //Lunes 1, Martes 2...
+        /*  Datos que dio el profe
+            La funcion recibira 2 parametros, el dia y las cosas que comprara (arreglo)
+            Numeros mayora 0
+        */
+
+        //var dia= parseInt(prompt("ingresa un numero",0));
+        /*se peude verificar que pregunta una y otra vez    
+            while (isNaN(dia)) {
+                var dia = parseInt(prompt("Ingresa un numero valido",0));
+                }
+            */
+
+
+
+        //var arreglo= [1000,500,650,8000]; ejemplo
+
+
+        //*************************     PREGUNTA 3     *************************
+        var arreglo= [1000,1000,13000,102];
+        var resultado=0;
+        document.write("El arreglo es ",arreglo+"<br>") //imrime el arreglo que se usa
+        function descuentoDias(dia,arreglo){
+            if (dia == 2 || dia == 4) {
+                for (let i = 0; i < arreglo.length; i++) {
+                    resultado = resultado + arreglo[i];
+                    
+                }
+                resultado= resultado - (resultado*0.2);
+                return document.write(resultado+"<br>")
+            }
+            else{
+                for (let i = 0; i < arreglo.length; i++) {
+                    resultado = resultado + arreglo[i];   
+                }
+                return document.write(resultado+"<br>")
+
+            }
+            
+        }
+
+        descuentoDias(2,arreglo);
+
+        ////*************************     PREGUNTA 2     *************************
+        // se prueba con arreglo= [1000,1000,12000];
+        var resultado2=0;
+        function descuentoProductos(dia, arreglo){
+            var esMayor=0;  //0 no es mayora 10k, 1 si es mayor a 10k
+            for (let i = 0; i < arreglo.length; i++) {
+                if (arreglo[i]>10000) {
+                    esMayor=1; 
+                }
+            }
+            if (esMayor==1 && arreglo.length>3 ) { //ya que cumple hay que descontarle 5%
+                if (dia == 2 || dia == 4) {
+                    for (let i = 0; i < arreglo.length; i++) {
+                        resultado2 = resultado2 + arreglo[i];
+                    }
+                    resultado2= resultado2 - (resultado2*0.25)
+                    return document.write(resultado2+"<br>")
+                    //return resultado2;
+                }
+                else{
+                    for (let i = 0; i < arreglo.length; i++) {
+                        resultado2 = resultado2 + arreglo[i];   
+                    }
+                    resultado2= resultado2 - (resultado2*0.05)
+                    return document.write(resultado2+"<br>")
+                }
+
+                
+            }
+            else{
+                for (let i = 0; i < arreglo.length; i++) {
+                    resultado2 = resultado2 + arreglo[i];   
+                }
+                return document.write(resultado2+"<br>")
+            }
+        }
+
+        descuentoProductos(2,arreglo);
+
+        //*************************     PREGUNTA 3     *************************
+        function verificarArreglo(arreglo){
+            let posicion="no";
+            let numero="no";
+            for (let i = 0; i < arreglo.length; i++) {
+                if (arreglo[i]<0) {
+                    posicion = i;
+                    numero = arreglo[i]
+                }
+                
+            }
+            if (numero=="no") {
+                return document.write("Exito! No hay numeros negativos<br>")
+            }
+            else{
+                
+                return document.write("Error!<br>Existe el numero negativo "+numero+" en la posicion "+posicion);
+            }
+
+        }
+        verificarArreglo(arreglo);
+
+        //*************************     PREGUNTA 4     *************************
+        //Crea una función que retorne el valor del producto más costoso.
+        function mayorArreglo(arreglo){
+            return document.write((Math.max(...arreglo)+"<br>"));
+        }
+
+        mayorArreglo(arreglo);
+
+        //Crea una función que retorne el valor del producto menos costoso.
+        function menorArreglo(arreglo){
+            return document.write((Math.min(...arreglo)));
+        }
+        menorArreglo(arreglo)
+
+
+
+
+
+    </script>
+</body>
+</html>
