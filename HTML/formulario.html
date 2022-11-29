@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- Etiquetas -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    <br><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido">
+    <br><br>
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo">
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="ingrese su contraseña">
+    <br><br>
+    <label for="telefono">Telefono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <br><br>
+    <label for="fecha">Fecha Nacimiento:</label>
+    <input type="date" id="fecha">
+
+    <br><br>
+    <label for="archivo">Archivo:</label>
+    <input type="file" id="archivo" name="archivo">
+
+    <br><br>
+    <label for="enviar">Enviar:</label>
+    <input type="submit" id="enviar" name="enviar">
+    
+
+    <br><br>
+    <label for="femenino" >Femenino</label>
+    <input type="radio" id="femenino" name="sexo" value="femenino">
+    <label for="masculino" >Masculino</label>
+    <input type="radio" id="masculino" name="sexo" value="masculino">
+    <label for="pnd" >Prefiero no decir</label>
+    <input type="radio" id="pnd" name="sexo" value="pnd">
+
+
+    <!-- Select o combobox-->
+    <h2>Selectores</h2>
+    <select name="sexo2" id="sexo2" >
+        <option value="0">Seleccione su sexo</option>
+        <option value="1">Femenino</option>
+        <option value="2">Masculino</option>
+        <option value="3">Prefiero no decir</option>
+    </select>
+
+    <br> <br>
+    <label for="femenino1">Femenino</label> 
+    <input type="checkbox" id="femenino1" name="sexo1" value="femenino1"><br>
+    <label for="masculino1">Masculino</label> 
+    <input type="checkbox" id="masculino1" name="sexo1" value="masculino1"><br>
+    <label for="pnd1">Prefiero no decir</label> 
+    <input type="checkbox" id="pnd1" name="sexo1" value="pnd1"><br>
+
+
+    <!-- text area -->
+    <textarea id="descripcion" name="descripcion" rows="10" cols="200" ></textarea>
+    <br><hr>
+
+    <h2>hidden</h2>
+    <!-- hidden es un cuador oculto -->
+    <input type="hidden" id="" name=""> 
+    <br><hr>
+    <h2>Buttons</h2>
+    <!-- botones -->
+    <br>
+    <input type="button" value="button" onclick="alert('hola')">
+    <input type="submit" value="submit" >
+    
+    
+</body>
+</html>
