@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+</head>
+<body>
+
+
+            <!-- 
+            TAREA generar un formulario de curriculum
+            0.-imagen
+            1.-agregar con parrafos descripcion de quien es usted, hobbies
+            2.-luego agregar opciones (selector por ejemplo) alguna caracteristicia que tienes (habilidades blandas de generation)
+            3.-lista no ordenadas (ul) cuales son sus hobbies
+            4.-con checbox 4 caracteristicas que los demas pudieran considerar que domina mas de la parte tecnica (java, html, css, etc)
+            5.- enviar 
+
+        -->
+
+        <a href="https://www.linkedin.com/in/nicolas-jarag/" target="_blank">
+            <img src="assets/img/yo.png" width="100" alt="sii"></a>
+        <a href="https://www.linkedin.com/in/nicolas-jarag/" target="_blank">
+            <img src="assets/img/linkedin.webp" width="30" alt="sii"></a>
+
+        <!-- text area -->
+        <br>
+        <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Describa quien es usted" ></textarea>
+        <br>
+        
+        <select name="sexo2" id="sexo2" >
+            <option value="0">Seleccione la habilidad blanda </option>
+            <option value="1">Comunicacion</option>
+            <option value="2">Orientacion al detalle</option>
+            <option value="3">Gestion del tiempo</option>
+            <option value="4">Trabajo en equipo</option>
+        </select>
+    
+        <h3>Mis hobbies</h3>
+        <ul>
+            <li>Jugar a la pelota</li>
+            <li>Amasar</li>
+            <li>Trekking</li>
+            <li>Dormir</li>
+        </ul>
+
+        <br>
+        <h3>Habilidad Tecnicas</h3>
+        <input type="checkbox" id="java" name="habilidadTec" value="java">
+        <label for="java">Java</label> <br>
+        <input type="checkbox" id="HTML" name="habilidadTec" value="HTML">
+        <label for="HTML">HTML</label> <br>
+        <input type="checkbox" id="CSS" name="habilidadTec" value="CSS">
+        <label for="CSS">CSS</label> <br>
+        <input type="checkbox" id="react" name="habilidadTec" value="react">
+        <label for="react">React</label> <br>
+        <br>
+        <input type="submit" value="enviar" style="margin-left: 200px">
+
+
+    
+</body>
+</html>
