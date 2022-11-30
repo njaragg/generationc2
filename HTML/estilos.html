@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS</title>
+    <style>
+        /* resetear las distancias o separaciones entre los elementos (todos por el *)*/
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        /*3 formas de asignar estilos */
+        /*1.- atraves del elemento (etiqueta)
+          estilo a TODOS los elementos */
+        p {
+            color:rgb(140, 226, 239) /* !important ignora las demas y usa esta*/
+        }
+
+        div{
+            background-color: black ;
+            width: 200px;
+            height: 200px;
+        }
+        /*2.- atraves de clases (etiqueta)
+          estilo a 1 o mas elementos */
+        .parrafo23{
+            color: white;
+            background-color: rgb(204, 62, 109);
+        }
+        /*3.- atraves del id con un #
+          estilo a 1 elemento, el del id */
+        #parrafo44{
+            color: aqua;
+            text-align: center;
+        }
+        a{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 300%;
+        }
+        
+        #padre{
+            background-color: lightslategray;
+            width: 400px;
+            height: 400px;
+            border: 1px solid lightslategray;
+
+
+        }
+        #hijo{
+            background-color: lightblue;
+            width: 10%;
+            height: 10%;
+            margin: 50% auto;
+
+
+
+        }
+        #hijo1{
+            background-color: lightblue;
+            width: 10%;
+            height: 10%;
+            margin: 0px;
+
+
+
+        }
+        #hijo2{
+            background-color: lightblue;
+            width: 10%;
+            height: 10%;
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>parrafo 1</p>
+        <p class="parrafo23">parrafo 2</p>
+        <p class="parrafo23">parrafo 3</p>
+        <p id="parrafo44">parrafo 4</p>
+        <a href="https://homer.sii.cl/">Visita Sii</a>
+    </div>
+    <br>
+    <h2>Margin y padding</h2>
+    <div id="padre">
+        <div id="hijo">
+        </div>
+        <div id="hijo1">
+        </div>
+        <div id="hijo2">
+            
+        </div>
+    </div>
+</body>
+</html>
